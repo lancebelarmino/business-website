@@ -3,6 +3,10 @@ const globalStyles = (theme) => ({
     boxSizing: 'border-box',
   },
 
+  html: {
+    scrollBehavior: 'smooth',
+  },
+
   body: {
     margin: 0,
     padding: 0,

@@ -2,12 +2,12 @@ import React from 'react';
 import { Container } from '@mantine/core';
 import useStyles from './Section.styles';
 
-const Section = ({ children }) => {
+const Section = ({ id, type, size, children }) => {
   const { classes } = useStyles();
 
   return (
-    <section>
-      <Container size={1236} padding={0}>
+    <section className={classes[type]} id={id}>
+      <Container className={classes.container} size={size}>
         {children}
       </Container>
     </section>
