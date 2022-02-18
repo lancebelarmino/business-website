@@ -4,7 +4,8 @@ const lightTheme = {
   colors: {
     white: '#FFFFFF',
     black: '#212529',
-    gray: ['#DEE2E6', '#ADB5BD', '#8D8F92'],
+    gray: ['#DEE2E6', '#ADB5BD', '#8D8F92', '#CED4DA'],
+    placeholder: '#DEE2E6',
   },
 
   fontFamily: 'Inter, sans-serif',
@@ -26,6 +27,14 @@ const lightTheme = {
       h4: { fontSize: 24, lineHeight: '34px' },
       h5: { fontSize: 16, lineHeight: '20px' },
     },
+  },
+
+  breakpoints: {
+    xs: 500,
+    sm: 800,
+    md: 1000,
+    lg: 1200,
+    xl: 1400,
   },
 
   other: {

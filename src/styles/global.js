@@ -11,6 +11,10 @@ const globalStyles = (theme) => ({
     margin: 0,
     padding: 0,
   },
+
+  a: {
+    textDecoration: 'none',
+  },
 });
 
 export default globalStyles;

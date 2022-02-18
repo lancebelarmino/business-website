@@ -3,7 +3,7 @@ import { Anchor, Group } from '@mantine/core';
 import { motion } from 'framer-motion';
 import useStyles from './AnimatedLink.styles';
 
-const button = {
+const buttonVariant = {
   hidden: {
     x: -5,
     opacity: 0,
@@ -18,7 +18,7 @@ const button = {
   },
 };
 
-const AnimatedLink = ({ link, text, component }) => {
+const AnimatedLink = ({ link, text, icon }) => {
   const { classes } = useStyles();
 
   return (
@@ -30,7 +30,9 @@ const AnimatedLink = ({ link, text, component }) => {
       whileHover="animate">
       <Group className={classes.wrapper}>
         <span>{text}</span>
-        <motion.span variants={button}>{component}</motion.span>
+        <motion.span className={classes.icon} variants={buttonVariant}>
+          {icon}
+        </motion.span>
       </Group>
     </Anchor>
   );

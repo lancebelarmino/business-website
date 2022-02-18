@@ -7,7 +7,12 @@ const useStyles = createStyles((theme) => ({
   },
 
   wrapper: {
+    display: 'inline-flex',
     gap: 12,
+  },
+
+  icon: {
+    marginTop: 2,
   },
 }));
 

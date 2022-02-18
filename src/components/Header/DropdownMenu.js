@@ -37,7 +37,6 @@ const fontVariant = {
 
 const DropdownMenu = () => {
   const [opened, setOpened] = useState(false);
-
   const { classes } = useStyles();
 
   const dropdownHandler = () => {

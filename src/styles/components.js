@@ -19,19 +19,6 @@ const componentStyles = {
     },
   }),
 
-  Menu: (theme) => ({
-    root: {
-      backgroundColor: 'red',
-    },
-
-    body: {
-      position: 'fixed',
-      top: 0,
-      left: '0px',
-      border: 'none',
-    },
-  }),
-
   Button: (theme) => ({
     root: {
       color: theme.colors.black,
@@ -45,6 +32,13 @@ const componentStyles = {
       fontWeight: 500,
       lineHeight: '20px',
       zIndex: 999,
+    },
+  }),
+
+  Divider: (theme) => ({
+    horizontal: {
+      marginBottom: 100,
+      borderColor: theme.colors.gray[3],
     },
   }),
 };

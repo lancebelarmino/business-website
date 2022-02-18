@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import useStyles from '../Icons/CloseIcon.styles';
 
-const close = {
+const closeVariant = {
   hidden: {
     pathLength: 0,
   },
@@ -30,8 +30,8 @@ const CloseIcon = () => {
       initial="hidden"
       animate="visible"
       exit="exit">
-      <motion.path d="M1 1L15 15" strokeWidth="2" variants={close} />
-      <motion.path d="M15 1L1 15" strokeWidth="2" variants={close} />
+      <motion.path d="M1 1L15 15" strokeWidth="2" variants={closeVariant} />
+      <motion.path d="M15 1L1 15" strokeWidth="2" variants={closeVariant} />
     </motion.svg>
   );
 };

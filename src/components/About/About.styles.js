@@ -14,7 +14,7 @@ const useStyles = createStyles((theme) => ({
     marginRight: 90,
 
     [theme.fn.smallerThan('sm')]: {
-      margin: '0 0 80px 0',
+      margin: '0 0 5rem 0',
     },
   },
 

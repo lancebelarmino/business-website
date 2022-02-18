@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import useStyles from '../Icons/HamburgerIcon.styles';
 
-const topBar = {
+const topBarVariant = {
   hidden: {
     x: 100,
   },
@@ -15,7 +15,7 @@ const topBar = {
   },
 };
 
-const middleBar = {
+const middleBarVariant = {
   hidden: {
     x: 100,
   },
@@ -29,7 +29,7 @@ const middleBar = {
   },
 };
 
-const bottomBar = {
+const bottomBarVariant = {
   hidden: {
     x: 100,
   },
@@ -57,9 +57,9 @@ const HamburgerIcon = () => {
       initial="hidden"
       animate="visible"
       exit="exit">
-      <motion.path d="M6 0H20V2H6V0Z" variants={topBar} />
-      <motion.path d="M0 6H20V8H0V6Z" variants={middleBar} />
-      <motion.path d="M10 12H20V14H10V12Z" variants={bottomBar} />
+      <motion.path d="M6 0H20V2H6V0Z" variants={topBarVariant} />
+      <motion.path d="M0 6H20V8H0V6Z" variants={middleBarVariant} />
+      <motion.path d="M10 12H20V14H10V12Z" variants={bottomBarVariant} />
     </motion.svg>
   );
 };
