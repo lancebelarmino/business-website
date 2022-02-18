@@ -11,7 +11,7 @@ const Projects = () => {
   const isDesktop = useMediaQuery('(min-width: 1000px)');
 
   return (
-    <Section size={1236} type={'content'}>
+    <Section id="projects" size={1236} type={'content'}>
       {isDesktop && <Divider />}
       <Title className={classes.heading} order={3}>
         Recent Projects

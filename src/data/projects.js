@@ -57,7 +57,7 @@ const data = [
   {
     id: 'craftic-:_O`A',
     title: 'Craftic',
-    type: ['Web Design & Development'],
+    type: ['Web Design', 'Web Development'],
     tech: ['HTML', 'CSS', 'Javascript'],
     credits: null,
     image:
