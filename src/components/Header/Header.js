@@ -19,7 +19,7 @@ const Header = () => {
   );
 
   return (
-    <Section size={1236} type={'header'}>
+    <Section size={1236} type="header">
       <Group position="apart">
         <Logo className={classes.logo} />
         {isMobile ? <DropdownMenu /> : HorizontalMenu}

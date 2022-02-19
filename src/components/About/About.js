@@ -9,7 +9,7 @@ const About = () => {
   const { classes } = useStyles();
 
   return (
-    <Section id="about" size={996} type={'content'}>
+    <Section id="about" size={996} type="content">
       <Group className={classes.wrapper}>
         <Image
           src="https://f004.backblazeb2.com/file/website-business/about.jpg"

@@ -12,7 +12,7 @@ const Hero = () => {
   const isMobile = useMediaQuery('(max-width: 800px)');
 
   return (
-    <Section size={1236} type={'content'}>
+    <Section size={1236} type="content">
       <div className={classes.intro}>
         <Title order={1} className={classes.heading}>
           Helping businesses achieve their success online

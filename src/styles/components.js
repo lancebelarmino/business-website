@@ -41,6 +41,22 @@ const componentStyles = {
       borderColor: theme.colors.gray[3],
     },
   }),
+
+  TextInput: (theme) => ({
+    input: {
+      background: 'none',
+      border: 'none',
+      borderBottom: '1px solid #ADB5BD',
+    },
+  }),
+
+  Textarea: (theme) => ({
+    input: {
+      background: 'none',
+      border: 'none',
+      borderBottom: '1px solid #ADB5BD',
+    },
+  }),
 };
 
 export default componentStyles;

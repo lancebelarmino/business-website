@@ -24,7 +24,7 @@ const lightTheme = {
       h1: { fontSize: 64, lineHeight: '80px' },
       h2: { fontSize: 48, lineHeight: '60px' },
       h3: { fontSize: 32, lineHeight: '40px' },
-      h4: { fontSize: 24, lineHeight: '34px' },
+      h4: { fontSize: 24, lineHeight: '32px' },
       h5: { fontSize: 16, lineHeight: '20px' },
     },
   },
