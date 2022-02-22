@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Title, Text, Anchor, Group, SimpleGrid } from '@mantine/core';
 import Section from '../Templates/Section';
 import ContactForm from './ContactForm';
