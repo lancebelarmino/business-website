@@ -10,6 +10,7 @@ const globalStyles = (theme) => ({
   body: {
     margin: 0,
     padding: 0,
+    fontFamily: 'Inter, sans-serif',
   },
 
   a: {

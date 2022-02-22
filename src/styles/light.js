@@ -5,6 +5,8 @@ const lightTheme = {
     white: '#FFFFFF',
     black: '#212529',
     gray: ['#DEE2E6', '#ADB5BD', '#8D8F92', '#CED4DA'],
+    success: '#60D16B',
+    invalid: '#FF5F2D',
     placeholder: '#DEE2E6',
   },
 

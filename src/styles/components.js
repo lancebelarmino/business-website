@@ -44,17 +44,37 @@ const componentStyles = {
 
   TextInput: (theme) => ({
     input: {
-      background: 'none',
+      height: '100%',
+      minHeight: '0',
+      padding: '0 0 12px 0',
+      margin: 0,
       border: 'none',
+      borderRadius: '0',
       borderBottom: '1px solid #ADB5BD',
+      background: 'none',
+      fontSize: 16,
+      transition: 'all 200ms ease',
+
+      '&:focus': {
+        borderColor: '#8D8F92',
+      },
     },
   }),
 
   Textarea: (theme) => ({
     input: {
-      background: 'none',
+      padding: '0 0 12px 0 !important',
       border: 'none',
+      borderRadius: '0',
       borderBottom: '1px solid #ADB5BD',
+      background: 'none',
+      fontSize: 16,
+      lineHeight: '24px',
+      transition: 'all 200ms ease',
+
+      '&:focus': {
+        borderColor: '#8D8F92',
+      },
     },
   }),
 };

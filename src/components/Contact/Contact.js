@@ -1,72 +1,62 @@
-import React from 'react';
-import {
-  Title,
-  Text,
-  Anchor,
-  Group,
-  Grid,
-  TextInput,
-  Textarea,
-  UnstyledButton,
-} from '@mantine/core';
-import useStyles from './Contact.styles';
+import React, { useState } from 'react';
+import { Title, Text, Anchor, Group, SimpleGrid } from '@mantine/core';
 import Section from '../Templates/Section';
+import ContactForm from './ContactForm';
+import useStyles from './Contact.styles';
+
 const Contact = () => {
   const { classes } = useStyles();
 
   return (
     <Section id="contact" size={1236} type="content">
-      <Group position="apart" className={classes.wrapper}>
-        <Group direction="column" className={classes.infoWrapper}>
-          <div>
-            <Title order={2} className={classes.heading}>
+      <SimpleGrid
+        className={classes.wrapper}
+        cols={2}
+        spacing={160}
+        breakpoints={[
+          { maxWidth: 1000, cols: 1, spacing: '120px' },
+          { maxWidth: 800, cols: 1, spacing: 'sm' },
+        ]}>
+        <SimpleGrid
+          className={classes.infoWrapper}
+          cols={1}
+          breakpoints={[
+            { maxWidth: 1000, cols: 2 },
+            { maxWidth: 800, cols: 1, spacing: '28px' },
+          ]}>
+          <div className={classes.infoHeader}>
+            <Title order={2} className={classes.infoHeading}>
               Let's Talk
             </Title>
-            <Text className={classes.subheading}>lancebelarmino@gmail.com</Text>
+            <Anchor
+              className={classes.infoSubheading}
+              href="mailto: lancebelarmino@gmail.com">
+              lancebelarmino@gmail.com
+            </Anchor>
           </div>
 
-          <Group position="apart" className={classes.details}>
-            <div className={classes.detailsBlock}>
+          <Group className={classes.details} position="apart">
+            <a className={classes.detailsBlock} href="tel: +639063969733">
               <Title className={classes.detailsHeading} order={5}>
                 Phone
               </Title>
               <Text>(063) 906 3969 733</Text>
-            </div>
+            </a>
 
-            <div>
+            <a
+              href="https://t.me/lancebelarmino"
+              target="_blank"
+              rel="noreferrer">
               <Title className={classes.detailsHeading} order={5}>
                 Telegram
               </Title>
               <Text>https://t.me/lancebelarmino</Text>
-            </div>
+            </a>
           </Group>
-        </Group>
+        </SimpleGrid>
 
-        <div className={classes.form}>
-          <Title order={4} className={classes.formHeading}>
-            Tell me more
-          </Title>
-          <form action="">
-            <Grid>
-              <Grid.Col lg={6} sm={12} className={classes.formRow}>
-                <TextInput placeholder="Name" required />
-              </Grid.Col>
-
-              <Grid.Col lg={6} sm={12} className={classes.formRow}>
-                <TextInput placeholder="Email" required />
-              </Grid.Col>
-
-              <Grid.Col lg={12} className={classes.formRow}>
-                <Textarea placeholder="Project Details" />
-              </Grid.Col>
-            </Grid>
-
-            <UnstyledButton className={classes.formButton}>
-              Submit
-            </UnstyledButton>
-          </form>
-        </div>
-      </Group>
+        <ContactForm />
+      </SimpleGrid>
     </Section>
   );
 };
