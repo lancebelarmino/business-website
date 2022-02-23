@@ -3,7 +3,7 @@ import { Group, Anchor } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import Section from '../Templates/Section';
 import DropdownMenu from './DropdownMenu';
-import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { ReactComponent as LogoIcon } from '../../assets/logo.svg';
 import useStyles from './Header.styles';
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <Section size={1236} type="header">
       <Group position="apart">
-        <Logo className={classes.logo} />
+        <LogoIcon className={classes.logo} />
         {isMobile ? <DropdownMenu /> : HorizontalMenu}
       </Group>
     </Section>

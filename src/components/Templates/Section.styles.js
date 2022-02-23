@@ -5,6 +5,14 @@ const useStyles = createStyles((theme) => ({
     paddingTop: 32,
   },
 
+  footer: {
+    marginBottom: '100px',
+
+    [theme.fn.smallerThan('sm')]: {
+      marginBottom: 80,
+    },
+  },
+
   content: {
     marginBottom: 200,
 

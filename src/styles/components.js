@@ -37,7 +37,6 @@ const componentStyles = {
 
   Divider: (theme) => ({
     horizontal: {
-      marginBottom: 100,
       borderColor: theme.colors.gray[3],
     },
   }),
@@ -79,6 +78,24 @@ const componentStyles = {
       '&:focus': {
         borderColor: '#8D8F92',
       },
+    },
+  }),
+
+  Container: (theme) => ({
+    root: {
+      padding: 0,
+    },
+  }),
+
+  Grid: (theme) => ({
+    root: {
+      margin: 0,
+    },
+  }),
+
+  Col: (theme) => ({
+    root: {
+      padding: 0,
     },
   }),
 };

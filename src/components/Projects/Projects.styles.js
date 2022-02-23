@@ -2,7 +2,7 @@ import { createStyles } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   heading: {
-    marginBottom: 40,
+    margin: '100px 0 40px 0',
   },
 
   wrapper: {

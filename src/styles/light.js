@@ -11,7 +11,7 @@ const lightTheme = {
   },
 
   fontFamily: 'Inter, sans-serif',
-  lineHeight: 0,
+  lineHeight: '24px',
   fontSizes: {
     xs: 10,
     sm: 14,
