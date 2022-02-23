@@ -1,6 +1,5 @@
 import React from 'react';
 import { Divider, SimpleGrid, Title } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
 import Section from '../Templates/Section';
 import ProjectItem from './ProjectItem';
 import useStyles from './Projects.styles';
@@ -8,11 +7,11 @@ import data from '../../data/projects';
 
 const Projects = () => {
   const { classes } = useStyles();
-  const isDesktop = useMediaQuery('(min-width: 1000px)');
 
   return (
     <Section id="projects" size={1236} type="content">
-      {isDesktop && <Divider />}
+      <Divider />
+
       <Title className={classes.heading} order={3}>
         Recent Projects
       </Title>

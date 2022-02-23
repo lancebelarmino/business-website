@@ -36,7 +36,7 @@ const Hero = () => {
       )}
       {isTablet && (
         <Image
-          // src="https://f004.backblazeb2.com/file/website-business/hero.jpg"
+          src="https://f004.backblazeb2.com/file/website-business/hero.jpg"
           height={isMobile ? 280 : 468}
           alt="3d coding images"
           withPlaceholder
