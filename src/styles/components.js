@@ -44,6 +44,8 @@ const componentStyles = {
 
   TextInput: (theme) => ({
     input: {
+      position: 'relative',
+      zIndex: 999,
       height: '100%',
       minHeight: '0',
       padding: '0 0 12px 0',
@@ -63,6 +65,8 @@ const componentStyles = {
 
   Textarea: (theme) => ({
     input: {
+      position: 'relative',
+      zIndex: 999,
       padding: '0 0 12px 0 !important',
       border: 'none',
       borderRadius: '0',

@@ -5,6 +5,10 @@ const useStyles = createStyles((theme) => ({
 
   formGroup: {
     marginBottom: 60,
+
+    [theme.fn.smallerThan('sm')]: {
+      flexDirection: 'column',
+    },
   },
 
   heading: {
@@ -15,11 +19,12 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
   },
 
-  button: {
-    fontSize: 20,
-    marginTop: 60,
-    fontWeight: 500,
-    lineHeight: '32px',
+  lastRow: {
+    marginBottom: 60,
+
+    [theme.fn.smallerThan('sm')]: {
+      marginBottom: 48,
+    },
   },
 
   floatingLabel: {

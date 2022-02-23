@@ -5,13 +5,15 @@ import {
   Group,
   SimpleGrid,
   TextInput,
-  UnstyledButton,
   Textarea,
+  UnstyledButton,
 } from '@mantine/core';
 import { useForm } from '@mantine/hooks';
 import { motion, AnimatePresence } from 'framer-motion';
+import AnimatedButton from '../Templates/AnimatedButton';
 import { ReactComponent as ErrorIcon } from '../../assets/error.svg';
 import { ReactComponent as SuccessIcon } from '../../assets/success.svg';
+import { ReactComponent as RightIcon } from '../../assets/right.svg';
 import useStyles from './ContactForm.styles';
 
 const inputVariant = {
@@ -95,7 +97,11 @@ const ContactForm = () => {
         Tell me more
       </Title>
       <form onSubmit={form.onSubmit(submitHandler)}>
-        <SimpleGrid className={classes.formGroup} cols={2} spacing={40}>
+        <SimpleGrid
+          className={classes.formGroup}
+          cols={2}
+          spacing={40}
+          breakpoints={[{ maxWidth: 800, cols: 1, spacing: '60px' }]}>
           <div className={classes.row}>
             <TextInput
               id="name"
@@ -163,7 +169,7 @@ const ContactForm = () => {
           </div>
         </SimpleGrid>
 
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.lastRow}`}>
           <Textarea
             id="textarea"
             value={form.values.textarea}
@@ -184,9 +190,7 @@ const ContactForm = () => {
           </motion.span>
         </div>
 
-        <UnstyledButton className={classes.button} type="submit">
-          Submit
-        </UnstyledButton>
+        <AnimatedButton type="submit" text="Submit" icon={<RightIcon />} />
       </form>
 
       <AnimatePresence>
