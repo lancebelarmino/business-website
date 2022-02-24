@@ -8,7 +8,7 @@ const ServiceItem = ({ icon, title, description }) => {
   return (
     <div className={classes.block}>
       {icon}
-      <Title order={4} className={classes.heading}>
+      <Title className={classes.heading} order={4}>
         {title}
       </Title>
       <Text order={4}>{description}</Text>

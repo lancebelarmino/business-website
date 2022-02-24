@@ -69,24 +69,26 @@ const DropdownMenu = () => {
             <motion.div initial="hidden" animate="visible" exit="exit">
               <Group className={classes.menu} direction="column" spacing={32}>
                 <Anchor
-                  href="#about"
                   className={classes.link}
+                  href="#about"
                   component={motion.a}
                   variants={fontVariant}
                   custom={1}>
                   About
                 </Anchor>
+
                 <Anchor
-                  href="#projects"
                   className={classes.link}
+                  href="#projects"
                   component={motion.a}
                   variants={fontVariant}
                   custom={2}>
                   Projects
                 </Anchor>
+
                 <Anchor
-                  href="#contact"
                   className={classes.link}
+                  href="#contact"
                   component={motion.a}
                   variants={fontVariant}
                   custom={3}>
@@ -102,6 +104,7 @@ const DropdownMenu = () => {
                 custom={4}>
                 Contact Me
               </Button>
+
               <Anchor
                 className={classes.email}
                 component={motion.a}

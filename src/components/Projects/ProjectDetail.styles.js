@@ -2,8 +2,8 @@ import { createStyles } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   content: {
-    position: 'relative',
     zIndex: 999,
+    position: 'relative',
   },
 
   wrapper: {
@@ -17,9 +17,12 @@ const useStyles = createStyles((theme) => ({
   detail: {
     marginBottom: 60,
 
+    [theme.fn.smallerThan('md')]: {
+      marginBottom: 32,
+    },
+
     [theme.fn.smallerThan('sm')]: {
       color: theme.colors.black,
-      marginBottom: 32,
     },
   },
 

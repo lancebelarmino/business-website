@@ -28,10 +28,10 @@ const componentStyles = {
 
   UnstyledButton: (theme) => ({
     root: {
+      zIndex: 999,
       color: theme.colors.black,
       fontWeight: 500,
       lineHeight: '20px',
-      zIndex: 999,
     },
   }),
 
@@ -43,8 +43,8 @@ const componentStyles = {
 
   TextInput: (theme) => ({
     input: {
-      position: 'relative',
       zIndex: 999,
+      position: 'relative',
       height: '100%',
       minHeight: '0',
       padding: '0 0 12px 0',
@@ -64,8 +64,8 @@ const componentStyles = {
 
   Textarea: (theme) => ({
     input: {
-      position: 'relative',
       zIndex: 999,
+      position: 'relative',
       padding: '0 0 12px 0 !important',
       border: 'none',
       borderRadius: '0',

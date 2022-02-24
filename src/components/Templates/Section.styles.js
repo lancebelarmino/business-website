@@ -16,6 +16,10 @@ const useStyles = createStyles((theme) => ({
   content: {
     marginBottom: 200,
 
+    [theme.fn.smallerThan('md')]: {
+      marginBottom: 160,
+    },
+
     [theme.fn.smallerThan('sm')]: {
       marginBottom: 100,
     },

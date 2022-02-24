@@ -28,8 +28,8 @@ const ProjectItem = ({ image, link, details }) => {
               <AnimatePresence>
                 {hovered && (
                   <motion.div
-                    className={classes.overlay}
                     key="overlay"
+                    className={classes.overlay}
                     initial={{ opacity: 0 }}
                     animate={{
                       opacity: 1,

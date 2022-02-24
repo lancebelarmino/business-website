@@ -8,15 +8,10 @@ const useStyles = createStyles((theme) => ({
     marginTop: 100,
 
     [theme.fn.smallerThan('sm')]: {
-      gridTemplateColumns: 'repeat(3, auto)',
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      placeItems: 'center',
       rowGap: '40px',
       marginTop: 80,
-    },
-  },
-
-  logo: {
-    [theme.fn.smallerThan('sm')]: {
-      marginBottom: 20,
     },
   },
 
@@ -25,6 +20,18 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan('sm')]: {
       gridColumn: '1 / span 3',
+    },
+  },
+
+  column5: {
+    [theme.fn.smallerThan('sm')]: {
+      gridColumn: '1 / span 3',
+    },
+  },
+
+  logo: {
+    [theme.fn.smallerThan('sm')]: {
+      margin: '0 auto 0.5rem auto',
     },
   },
 

@@ -6,10 +6,10 @@ import { ReactComponent as RightIcon } from '../../assets/right.svg';
 import useStyles from './Hero.styles';
 
 const Hero = () => {
-  const { classes } = useStyles();
   const isDesktop = useMediaQuery('(min-width: 1000px)');
   const isTablet = useMediaQuery('(max-width: 1000px)');
   const isMobile = useMediaQuery('(max-width: 800px)');
+  const { classes } = useStyles();
 
   return (
     <Section size={1236} type="content">
@@ -27,8 +27,8 @@ const Hero = () => {
 
       {isDesktop && (
         <Image
-          height={640}
           src="https://f004.backblazeb2.com/file/website-business/hero.jpg"
+          height={640}
           alt="3d coding images"
           withPlaceholder
           placeholder={' '}

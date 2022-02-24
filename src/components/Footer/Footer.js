@@ -22,10 +22,10 @@ const Footer = () => {
             className={classes.linkWrapper}
             direction="column"
             spacing={36}>
-            <Anchor href="https://mantine.dev/" target="_blank">
+            <Anchor href="https://github.com/lancebelarmino" target="_blank">
               Github
             </Anchor>
-            <Anchor href="https://mantine.dev/" target="_blank">
+            <Anchor href="https://dribbble.com/lancebelarmino" target="_blank">
               Dribble
             </Anchor>
           </Group>
@@ -36,10 +36,14 @@ const Footer = () => {
             className={classes.linkWrapper}
             direction="column"
             spacing={36}>
-            <Anchor href="https://mantine.dev/" target="_blank">
+            <Anchor
+              href="https://www.behance.net/lancebelarmino"
+              target="_blank">
               Behance
             </Anchor>
-            <Anchor href="https://mantine.dev/" target="_blank">
+            <Anchor
+              href="https://www.linkedin.com/in/lance-belarmino-3a9954170/"
+              target="_blank">
               LinkedIn
             </Anchor>
           </Group>
@@ -50,17 +54,19 @@ const Footer = () => {
             className={classes.linkWrapper}
             direction="column"
             spacing={36}>
-            <Anchor href="https://mantine.dev/" target="_blank">
+            <Anchor href="https://www.facebook.com/lanceblrmn" target="_blank">
               Facebook
             </Anchor>
-            <Anchor href="https://mantine.dev/" target="_blank">
+            <Anchor href="https://twitter.com/lanceblrmn" target="_blank">
               Twitter
             </Anchor>
           </Group>
         </div>
 
-        <div>
-          <Anchor href="https://mantine.dev/" target="_blank">
+        <div className={classes.column5}>
+          <Anchor
+            href="https://www.instagram.com/lancebelarmino/"
+            target="_blank">
             Instagram
           </Anchor>
         </div>

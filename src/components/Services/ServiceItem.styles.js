@@ -2,20 +2,20 @@ import { createStyles } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   block: {
-    padding: '80px 40px',
+    padding: '5rem 2.5rem',
     border: '1px solid #DEE2E6',
 
     [theme.fn.smallerThan('md')]: {
-      padding: '40px 40px',
+      padding: 40,
     },
 
     [theme.fn.smallerThan('sm')]: {
-      padding: '40px 24px',
+      padding: '2.5rem 1.5rem',
     },
   },
 
   heading: {
-    padding: '24px 0 12px 0',
+    padding: '1.5rem 0 0.75rem 0',
   },
 }));
 
