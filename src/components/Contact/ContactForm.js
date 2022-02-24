@@ -29,6 +29,12 @@ const inputVariant = {
   },
 };
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 const ContactForm = () => {
   const [animateName, setAnimateName] = useState(false);
   const [animateEmail, setAnimateEmail] = useState(false);
@@ -77,11 +83,19 @@ const ContactForm = () => {
   };
 
   const submitHandler = (values) => {
-    setFormSubmitted(true);
-    setAnimateName(false);
-    setAnimateEmail(false);
-    setAnimateTextarea(false);
-    form.reset();
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...values }),
+    })
+      .then(() => {
+        setFormSubmitted(true);
+        setAnimateName(false);
+        setAnimateEmail(false);
+        setAnimateTextarea(false);
+        form.reset();
+      })
+      .catch((error) => alert(error));
 
     setTimeout(() => {
       setFormSubmitted(false);
