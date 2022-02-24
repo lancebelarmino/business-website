@@ -6,7 +6,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   footer: {
-    marginBottom: '100px',
+    marginBottom: 100,
 
     [theme.fn.smallerThan('sm')]: {
       marginBottom: 80,

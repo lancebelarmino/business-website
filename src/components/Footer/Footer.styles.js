@@ -10,7 +10,7 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan('sm')]: {
       gridTemplateColumns: 'repeat(3, 1fr)',
       placeItems: 'center',
-      rowGap: '40px',
+      rowGap: 40,
       marginTop: 80,
     },
   },

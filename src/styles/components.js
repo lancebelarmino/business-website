@@ -47,7 +47,7 @@ const componentStyles = {
       position: 'relative',
       height: '100%',
       minHeight: '0',
-      padding: '0 0 12px 0',
+      padding: '0 0 0.75rem 0',
       margin: 0,
       border: 'none',
       borderRadius: '0',
@@ -66,7 +66,7 @@ const componentStyles = {
     input: {
       zIndex: 999,
       position: 'relative',
-      padding: '0 0 12px 0 !important',
+      padding: '0 0 0.75rem 0 !important',
       border: 'none',
       borderRadius: '0',
       borderBottom: '1px solid #ADB5BD',
