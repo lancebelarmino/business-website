@@ -95,7 +95,10 @@ const ContactForm = () => {
       <Title order={4} className={classes.heading}>
         Tell me more
       </Title>
-      <form onSubmit={form.onSubmit(submitHandler)}>
+
+      <form onSubmit={form.onSubmit(submitHandler)} data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+
         <SimpleGrid
           className={classes.formGroup}
           cols={2}
@@ -107,6 +110,7 @@ const ContactForm = () => {
               classNames={{
                 input: form.errors.name ? classes.errorInput : '',
               }}
+              name="name"
               value={form.values.name}
               onFocus={(e) => e.target.value === '' && setAnimateName(true)}
               onChange={changeHandler}
@@ -140,6 +144,7 @@ const ContactForm = () => {
               classNames={{
                 input: form.errors.email ? classes.errorInput : '',
               }}
+              name="email"
               value={form.values.email}
               onFocus={(e) => e.target.value === '' && setAnimateEmail(true)}
               onChange={changeHandler}
@@ -171,6 +176,7 @@ const ContactForm = () => {
         <div className={`${classes.row} ${classes.lastRow}`}>
           <Textarea
             id="textarea"
+            name="description"
             value={form.values.textarea}
             variant="unstyled"
             minRows={2}
