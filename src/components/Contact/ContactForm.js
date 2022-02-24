@@ -110,7 +110,10 @@ const ContactForm = () => {
         Tell me more
       </Title>
 
-      <form onSubmit={form.onSubmit(submitHandler)} data-netlify="true">
+      <form
+        onSubmit={form.onSubmit(submitHandler)}
+        data-netlify="true"
+        data-netlify-recaptcha="true">
         <input type="hidden" name="form-name" value="contact" />
 
         <SimpleGrid
@@ -211,6 +214,8 @@ const ContactForm = () => {
 
         <AnimatedButton type="submit" text="Submit" icon={<RightIcon />} />
       </form>
+
+      <div data-netlify-recaptcha="true"></div>
 
       <AnimatePresence>
         {formSubmitted && (
