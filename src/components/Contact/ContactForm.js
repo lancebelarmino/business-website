@@ -213,9 +213,9 @@ const ContactForm = () => {
         </div>
 
         <AnimatedButton type="submit" text="Submit" icon={<RightIcon />} />
-      </form>
 
-      <div data-netlify-recaptcha="true"></div>
+        <div data-netlify-recaptcha="true" />
+      </form>
 
       <AnimatePresence>
         {formSubmitted && (
