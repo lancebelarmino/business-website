@@ -45,7 +45,6 @@ const ContactForm = () => {
       name: '',
       email: '',
       textarea: '',
-      test: 'testing',
     },
 
     validationRules: {
