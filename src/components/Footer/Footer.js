@@ -14,7 +14,7 @@ const Footer = () => {
       <div className={classes.content}>
         <Group className={classes.column1} direction="column">
           <LogoIcon className={classes.logo} />
-          <Text>© 2021 Lance Belarmino</Text>
+          <Text>© 2022 Lance Belarmino</Text>
         </Group>
 
         <div>

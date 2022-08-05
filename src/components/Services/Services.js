@@ -13,13 +13,13 @@ const Services = () => {
   return (
     <Section id="services" size={996} type="content">
       <div className={classes.header}>
-        <Title order={2} className={classes.heading}>
-          Services
-        </Title>
         <Text size="lg" className={classes.subheading}>
-          I provide various services that you can choose from based from what
-          need.
+          Services
         </Text>
+
+        <Title order={2} className={classes.heading}>
+          Fueling growth through strategy and technology
+        </Title>
       </div>
 
       <SimpleGrid

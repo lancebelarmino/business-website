@@ -2,17 +2,15 @@ import { createStyles } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   header: {
-    width: 448,
-    marginBottom: 80,
+    width: 800,
+    marginBottom: 60,
 
-    [theme.fn.smallerThan('sm')]: {
-      marginBottom: 60,
+    [theme.fn.smallerThan('md')]: {
+      width: '100%',
     },
   },
 
   heading: {
-    marginBottom: 20,
-
     [theme.fn.smallerThan('sm')]: {
       fontSize: 32,
       lineHeight: '40px',
@@ -20,11 +18,8 @@ const useStyles = createStyles((theme) => ({
   },
 
   subheading: {
+    marginBottom: 12,
     lineHeight: '32px',
-
-    [theme.fn.smallerThan('sm')]: {
-      marginBottom: 20,
-    },
   },
 }));
 

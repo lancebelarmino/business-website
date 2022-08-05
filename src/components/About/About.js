@@ -22,15 +22,15 @@ const About = () => {
         />
 
         <div>
-          <Title className={classes.heading} order={2}>
-            Hi, I’m Lance
+          <Title className={classes.heading} order={3}>
+            Hi, I'm Lance
           </Title>
 
           <Text className={classes.subheading} size="lg">
-            I’m a web developer and user interface designer who helps inspiring
-            small or upcoming businesses build their online presence. Let me
-            help you build your ideal website so that you can grow your
-            business.
+            I'm a frontend developer, and occasionally a user interface
+            designer, who helps businesses build their online presence. Let me
+            help you create your ideal website and make a memorable experience
+            for your customers.
           </Text>
 
           <AnimatedLink
